@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background"
+    tools:context=".eat_menu">
+
+    <ListView
+        android:id="@+id/food_list"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/food_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/food_list"
+        android:layout_marginBottom="80dp"
+        android:layout_weight="0"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="الطعام.."
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorHint="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/imageView6"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/food_list"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/sign_in_layout"
+        android:onClick="delete"
+        android:text="DELETE"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/imageView7"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/sign_in_layout"
+        android:onClick="edit"
+        android:text="EDIT"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/food_list"
+        android:layout_alignTop="@+id/food_name"
+        android:layout_marginBottom="80dp"
+        android:layout_weight="0"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="السعر..."
+        android:inputType="numberDecimal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+    <Button
+        android:id="@+id/imageView5"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/food_name"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/sign_in_layout"
+        android:onClick="add"
+        android:text="ADD"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

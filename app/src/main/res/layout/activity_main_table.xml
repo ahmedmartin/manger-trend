@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/table_background"
+    tools:context=".main_table">
+
+    <ListView
+        android:id="@+id/table_list"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:id="@+id/imageButton3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageButton4"
+        android:layout_gravity="bottom|left"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/sign_in_layout"
+        android:onClick="add"
+        android:text="ADD"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <Button
+        android:id="@+id/imageButton4"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/sign_in_layout"
+        android:onClick="remove"
+        android:text="DELETE"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <EditText
+        android:id="@+id/table_number"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton3"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="رقم الطاوله"
+        android:inputType="numberDecimal"
+        android:paddingRight="10dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorHint="@color/common_google_signin_btn_text_dark_default"
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

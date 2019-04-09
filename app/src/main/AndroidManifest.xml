@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.martin.mangerresturant">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".sign_in">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main" />
+        <activity android:name=".main_table" />
+        <activity android:name=".main_delivery" />
+        <activity android:name=".main_menu" />
+        <activity android:name=".eat_menu" />
+        <activity android:name=".delivery_info" />
+        <activity
+            android:name=".user"
+            android:label="@string/title_activity_user"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".cashier"
+            android:label="@string/title_activity_cashier"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".orders" />
+        <activity android:name=".order_details" />
+        <activity android:name=".user_details"></activity>
+    </application>
+
+</manifest>

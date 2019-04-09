@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/draw_layout">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:background="@drawable/ain_background"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sign_in_layout" />
+        <!--
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:onClick="table"
+                app:srcCompat="@drawable/table" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:onClick="delivery"
+                app:srcCompat="@drawable/delivery" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:onClick="menu"
+                app:srcCompat="@drawable/menu" />
+
+                <Button
+                android:id="@+id/button3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:background="?attr/actionModeCloseDrawable"
+                android:onClick="exit"
+                android:textStyle="bold|italic" />
+
+                -->
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="cashier"
+            android:src="@drawable/cashier" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="50dp"
+            android:onClick="user_info"
+            android:src="@drawable/person" />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#80ffffff"
+        app:menu="@menu/navigation_menu"
+        app:headerLayout="@layout/nav_layout"/>
+
+    </android.support.v4.widget.DrawerLayout>

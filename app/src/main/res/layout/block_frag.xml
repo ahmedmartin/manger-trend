@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/user_background"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/block_list"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/block_search"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignStart="@+id/block_list"
+                android:layout_alignTop="@+id/block_phone"
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:src="@android:drawable/ic_menu_search" />
+
+            <EditText
+                android:id="@+id/block_phone"
+                android:layout_width="253dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/block_list"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="23dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="phone"
+                android:textColorLink="@android:color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
